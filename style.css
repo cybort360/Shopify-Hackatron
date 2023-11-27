@@ -25,20 +25,20 @@ header {
   width: 1440px;
   height: 56px;
   background-color: var(--black);
-  display: flex;
-  justify-content: space-between;
 }
 
-header > * {
+header ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 464px 480px 464px;
+}
+
+ul > * {
   margin-top: 9px;
 }
 
-.logo {
-  margin-left: 16px;
-}
-
 .search-bar {
-  /* position: relative; */
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 7.52px;
@@ -47,6 +47,7 @@ header > * {
 .search-icon {
   position: relative;
   left: 20px;
+  z-index: 1;
 }
 
 .search {
@@ -57,6 +58,8 @@ header > * {
   gap: 6px;
   font-family: var(--inter);
   background-color: #303030;
+  position: relative;
+  top: -16px;
 }
 
 .search:hover {
@@ -88,13 +91,50 @@ header > * {
   gap: 8px;
 }
 
+li:last-of-type {
+  display: grid;
+  grid-template-columns: 20px 170px;
+  position: relative;
+  left: 270px;
+  gap: 16px;
+}
+
+.icons_dc {
+  background-color: #303030;
+  width: 142px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.icons {
+  font-family: var(--inter);
+  font-size: 12px;
+  padding: 8px;
+  color: #e3e3e3;
+  font-weight: 500;
+}
+
+.dc {
+  position: relative;
+  top: -24px;
+  left: 110px;
+  width: 18px;
+  background-color: #36fba1;
+  border-radius: 6px;
+  font-family: var(--inter);
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .bell {
   background-color: #303030;
   width: 32px;
   height: 32px;
   border-radius: 8px;
   padding: 8px;
-  gap: 8px;
   vertical-align: baseline;
 }
 
@@ -103,34 +143,6 @@ header > * {
   height: 32px;
   border-radius: 8px;
   background-color: #303030;
-}
-
-.icons {
-  width: 96px;
-  height: 32px;
-  font-family: var(--inter);
-  color: #e3e3e3;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 15.6px;
-  cursor: pointer;
-}
-
-.dc {
-  width: 18px;
-  height: 9px;
-  background-color: #36fba1;
-  border-radius: 6px;
-  font-family: var(--inter);
-  text-align: center;
-  font-weight: 500;
-  font-size: 12px;
-  position: relative;
-  top: 9px;
-  left: 5px;
-  padding: 7px;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 aside {
@@ -259,58 +271,81 @@ nav {
   padding: 4px;
 }
 
+.dropdown-list_item img {
+  position: relative;
+  right: 30px;
+}
+
 .all-stores {
   display: block;
   position: relative;
-  left: 24px;
+  right: 8px;
   bottom: 20px;
 }
 
 .help {
   width: 74px;
   height: 18px;
+  position: relative;
+  right: 30px;
 }
 
-.chanelog {
+.changelog {
   width: 67px;
   height: 18px;
+  position: relative;
+  right: 30px;
 }
 .forum {
   width: 117px;
   height: 18px;
+  position: relative;
+  right: 30px;
 }
 
 .hire {
   width: 136px;
   height: 18px;
+  position: relative;
+  right: 30px;
 }
 
 .keyboard {
   width: 121px;
   height: 18px;
+  position: relative;
+  right: 30px;
 }
 
 .david {
   width: 88px;
   height: 18px;
   font-weight: 500;
+  position: relative;
+  right: 30px;
 }
 
 .email {
   width: 144px;
   height: 16px;
   font-size: 12px;
+  position: relative;
+  right: 30px;
 }
 
 .manage {
   width: 103px;
   height: 18px;
   margin-top: 30px;
+  position: relative;
+  right: 30px;
 }
 
 .log-out {
   width: 47px;
   height: 18px;
+  position: relative;
+  right: 300px;
 }
 
 .line1 {
