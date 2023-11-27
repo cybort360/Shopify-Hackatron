@@ -225,7 +225,6 @@ nav {
 }
 
 .nav-name > p:first-child {
-  width: 28px;
   height: 28px;
   border-radius: 5.25px;
   background-color: #36fba1;
@@ -239,13 +238,13 @@ nav {
 }
 
 .davii {
-  width: 105px;
-  height: 18px;
+  /* width: 105px; */
+  /* height: 18px; */
   font-family: var(--inter);
   font-size: 13px;
   font-weight: 600px;
   position: relative;
-  top: 0.8rem;
+  top: 8px;
 }
 
 .dropdown {
