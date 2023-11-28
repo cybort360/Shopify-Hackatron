@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="shortcut icon" href="images/icons8-shopify-64.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +23,7 @@
           <input class="search" type="text" placeholder="Search" />
         </li>
         <li>
-          <img src="images/bell.svg" alt="" style="width: 13.85px; height: 14.5px; gap: 8px" class="bell" />
+          <img src="images/bell.svg" alt="" style="width: 13.85px; height: 14.5px; gap: 8px" class="bell bell_icon" />
           <div class="icons_dc">
             <p class="icons">Davii Collections</p>
             <span class="dc">DC</span>
@@ -31,7 +32,7 @@
       </ul>
     </header>
 
-    <aside>
+    <aside class="bell_alerts">
       <h1 class="alert">Alerts</h1>
       <div class="alert-icons">
         <img src="images/filter.svg" alt="" />
@@ -176,5 +177,21 @@
         </div>
       </div>
     </main>
+    <script>
+      $(document).ready(function () {
+        $(".bell_alerts").hide();
+        $(".bell_icon").show();
+
+        $(".bell_icon").click(function () {
+          var isvisible = $(this).next(".bell-alerts").is(":visible");
+
+          if (isvisible) {
+            $(this).next(".bell_alerts").hide();
+          } else {
+            $(this).next(".bell_alerts").show();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
