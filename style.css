@@ -24,7 +24,7 @@ body {
 header {
   width: 1440px;
   height: 56px;
-  background-color: var(--black);
+  background-color: #1a1a1a;
 }
 
 header ul {
@@ -152,9 +152,10 @@ aside {
   background-color: #ffffff;
   border: 1px;
   border-radius: 14px;
-  position: relative;
-  top: 5px;
-  left: 1041px;
+  position: absolute;
+  top: 60px;
+  left: 1046px;
+  z-index: 1;
 }
 
 .alert {
@@ -203,18 +204,18 @@ aside {
 }
 
 nav {
-  width: 320px;
+  width: 300px;
   height: 384px;
   background-color: #ffffff;
-  position: relative;
-  top: 5px;
-  left: 1104px;
+  position: absolute;
+  top: 60px;
+  left: 1130px;
   border-radius: 14px;
 }
 
 .nav-name {
   background-color: #dbdbdb;
-  width: 308px;
+  width: 288px;
   height: 36px;
   border-radius: 8px;
   display: grid;
@@ -349,7 +350,7 @@ nav {
 }
 
 .line1 {
-  width: 320px;
+  width: 300px;
   border: 0.75px solid #e1e1e1;
   position: relative;
   right: 40px;

@@ -23,7 +23,7 @@
           <input class="search" type="text" placeholder="Search" />
         </li>
         <li>
-          <img src="images/bell.svg" alt="" style="width: 13.85px; height: 14.5px; gap: 8px" class="bell bell_icon" />
+          <img id="bell" class="bell" src="images/bell.svg" alt="" style="width: 13.85px; height: 14.5px; gap: 8px" />
           <div class="icons_dc">
             <p class="icons">Davii Collections</p>
             <span class="dc">DC</span>
@@ -32,7 +32,7 @@
       </ul>
     </header>
 
-    <aside class="bell_alerts">
+    <aside id="alerts">
       <h1 class="alert">Alerts</h1>
       <div class="alert-icons">
         <img src="images/filter.svg" alt="" />
@@ -178,19 +178,13 @@
       </div>
     </main>
     <script>
-      $(document).ready(function () {
-        $(".bell_alerts").hide();
-        $(".bell_icon").show();
+      const bellIcon = document.getElementById("bell");
+      const alertText = document.getElementById("alerts");
 
-        $(".bell_icon").click(function () {
-          var isvisible = $(this).next(".bell-alerts").is(":visible");
+      alertText.hidden = true;
 
-          if (isvisible) {
-            $(this).next(".bell_alerts").hide();
-          } else {
-            $(this).next(".bell_alerts").show();
-          }
-        });
+      document.querySelector(".bell").addEventListener("click", () => {
+        alertText.hidden = !alertText.hidden;
       });
     </script>
   </body>
