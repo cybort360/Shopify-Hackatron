@@ -113,6 +113,7 @@ li:last-of-type {
   padding: 8px;
   color: #e3e3e3;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .dc {

@@ -24,7 +24,7 @@
         </li>
         <li>
           <img id="bell" class="bell" src="images/bell.svg" alt="" style="width: 13.85px; height: 14.5px; gap: 8px" />
-          <div class="icons_dc">
+          <div class="icons_dc" id="icons">
             <p class="icons">Davii Collections</p>
             <span class="dc">DC</span>
           </div>
@@ -43,7 +43,7 @@
       </div>
     </aside>
 
-    <nav>
+    <nav id="nav">
       <div class="nav-name">
         <p>DC</p>
         <p class="davii">Davii Collections</p>
@@ -89,7 +89,7 @@
       <p>Extend your trial for $1/month for 3 months on select plans.</p>
       <div class="plan">
         <button class="btn-plan">Select a plan</button>
-        <img src="images/close.svg" alt="" class="btn-close" style="width: 20px; height: 20px" />
+        <img src="images/close.svg" alt="" class="btn-close" style="width: 20px; height: 20px" id="btn-close" />
       </div>
     </section>
 
@@ -106,74 +106,76 @@
       </div>
       <img src="images/arrow-down.svg" alt="" style="width: 20px; height: 20px" class="arrow-down" />
 
-      <div class="store-container">
-        <div class="customize-store">
-          <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" />
-          <div class="customize-store_text">
-            <h1>Customize your online store</h1>
-            <p>
-              Choose a theme and add your logo, colors, and images to reflect your brand.
-              <span><a class="learn-more" href="#">Learn more</a></span>
-            </p>
-            <button class="theme">Customize theme</button>
+      <div id="main-store">
+        <div class="store-container">
+          <div class="customize-store">
+            <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" />
+            <div class="customize-store_text">
+              <h1>Customize your online store</h1>
+              <p>
+                Choose a theme and add your logo, colors, and images to reflect your brand.
+                <span><a class="learn-more" href="#">Learn more</a></span>
+              </p>
+              <button class="theme">Customize theme</button>
+            </div>
+            <img class="customise-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="" />
           </div>
-          <img class="customise-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="" />
-        </div>
 
-        <div class="product">
-          <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
-          <div class="customize-store_text">
-            <h1>Add your first product</h1>
-            <p>
-              Write a description, add photos, and set pricing for the products you plan to sell.
-              <span><a class="learn-more" href="#">Learn more</a></span>
-            </p>
-            <button class="theme">Add product</button>
-            <button class="white-theme">Import product</button>
+          <div class="product">
+            <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
+            <div class="customize-store_text">
+              <h1>Add your first product</h1>
+              <p>
+                Write a description, add photos, and set pricing for the products you plan to sell.
+                <span><a class="learn-more" href="#">Learn more</a></span>
+              </p>
+              <button class="theme">Add product</button>
+              <button class="white-theme">Import product</button>
+            </div>
+            <img class="customise-img" src="https://crushingit.tech/hackathon-assets/product.png" alt="" />
           </div>
-          <img class="customise-img" src="https://crushingit.tech/hackathon-assets/product.png" alt="" />
-        </div>
 
-        <div class="domain">
-          <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
-          <div class="customize-store_text">
-            <h1>Add a custom domain</h1>
-            <p>
-              Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your
-              online store.
-              <span><a class="learn-more" href="#">Learn more</a></span>
-            </p>
-            <button class="theme">Add domain</button>
+          <div class="domain">
+            <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
+            <div class="customize-store_text">
+              <h1>Add a custom domain</h1>
+              <p>
+                Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your
+                online store.
+                <span><a class="learn-more" href="#">Learn more</a></span>
+              </p>
+              <button class="theme">Add domain</button>
+            </div>
+            <img class="customise-img" src="https://crushingit.tech/hackathon-assets/website.png" alt="" />
           </div>
-          <img class="customise-img" src="https://crushingit.tech/hackathon-assets/website.png" alt="" />
-        </div>
 
-        <div class="store-name">
-          <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
-          <div class="customize-store_text">
-            <h1>Name your store</h1>
-            <p>
-              Your temporary store name is currently Davii collections. The store name appears in your admin and your
-              online store.
-              <span><a class="learn-more" href="#">Learn more</a></span>
-            </p>
-            <button class="theme">Name store</button>
+          <div class="store-name">
+            <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
+            <div class="customize-store_text">
+              <h1>Name your store</h1>
+              <p>
+                Your temporary store name is currently Davii collections. The store name appears in your admin and your
+                online store.
+                <span><a class="learn-more" href="#">Learn more</a></span>
+              </p>
+              <button class="theme">Name store</button>
+            </div>
+            <img class="customise-img" src="https://crushingit.tech/hackathon-assets/name-store.png" alt="" />
           </div>
-          <img class="customise-img" src="https://crushingit.tech/hackathon-assets/name-store.png" alt="" />
-        </div>
 
-        <div class="payment">
-          <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
-          <div class="customize-store_text">
-            <h1>Set up a payment provider</h1>
-            <p>
-              Choose a payment provider to start accepting payments. You’ll need to create an account with the payment
-              provider and set it up with your Shopify store.
-              <span><a class="learn-more" href="#">Learn more</a></span>
-            </p>
-            <button class="theme">Customize theme</button>
+          <div class="payment">
+            <img src="images/dashed-circle.svg" alt="" style="width: 24px; height: 24px" class="dashed-circle" />
+            <div class="customize-store_text">
+              <h1>Set up a payment provider</h1>
+              <p>
+                Choose a payment provider to start accepting payments. You’ll need to create an account with the payment
+                provider and set it up with your Shopify store.
+                <span><a class="learn-more" href="#">Learn more</a></span>
+              </p>
+              <button class="theme">Customize theme</button>
+            </div>
+            <img class="customise-img" src="https://crushingit.tech/hackathon-assets/payment.png" alt="" />
           </div>
-          <img class="customise-img" src="https://crushingit.tech/hackathon-assets/payment.png" alt="" />
         </div>
       </div>
     </main>
@@ -185,6 +187,22 @@
 
       document.querySelector(".bell").addEventListener("click", () => {
         alertText.hidden = !alertText.hidden;
+      });
+
+      const storeIcon = document.getElementById("icons");
+      const navigation = document.getElementById("nav");
+
+      navigation.hidden = true;
+      document.querySelector(".icons").addEventListener("click", () => {
+        navigation.hidden = !navigation.hidden;
+      });
+
+      const closeIcon = document.getElementById("btn-close");
+      const mainStore = document.getElementById("main-store");
+
+      navigation.hidden = true;
+      document.querySelector(".arrow-down").addEventListener("click", () => {
+        mainStore.hidden = !mainStore.hidden;
       });
     </script>
   </body>
